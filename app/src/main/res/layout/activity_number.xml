@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".number">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/signinbackground"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25.25dp"
+            android:layout_marginTop="56.83dp"
+            android:background="@color/white"
+            android:src="@drawable/backbtn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25.25dp"
+            android:layout_marginTop="65.19dp"
+            android:text="Enter your mobile number"
+            android:textColor="#181725"
+            android:textSize="26sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25.12dp"
+            android:layout_marginTop="27.58dp"
+            android:text="Mobile Number"
+            android:textColor="#7C7C7C" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24.53dp"
+            android:layout_marginTop="7.50dp"
+            android:layout_marginRight="24.93dp"
+            android:drawableStart="@drawable/flag"
+            android:drawablePadding="12.02dp"
+            android:background="@color/white"
+            android:inputType="number"
+            android:text="+880"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            tools:ignore="TouchTargetSizeCheck" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/line2"/>
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/nextBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/nextarrow"
+            android:backgroundTint="#53B175"
+            android:padding="10dp"
+            app:tint="#fff"
+            android:background="@android:color/transparent"
+            android:layout_gravity="end"
+            android:layout_marginTop="260dp"
+            android:layout_marginEnd="24dp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

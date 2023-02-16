@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signin">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/vegetables" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:text="Get your groceries\nwith nectar"
+            android:textColor="@color/black"
+            android:textSize="26dp" />
+
+        <EditText
+            android:id="@+id/phoneNumber_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30.61dp"
+            android:background="@color/white"
+            android:layout_marginHorizontal="25dp"
+            android:clickable="false"
+            android:drawableStart="@drawable/flag"
+            android:drawablePadding="12.02dp"
+            android:focusable="false"
+            android:text="+880"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/line2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Or connect with social media"
+            android:textColor="@color/hint_color_loginscreen"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/google_id"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btnsigninwithgoogle"
+            android:drawableStart="@drawable/googleicon"
+            android:drawablePadding="38dp"
+            android:gravity="center"
+            android:layout_marginHorizontal="25dp"
+            android:paddingStart="35.91dp"
+            android:paddingEnd="81.64dp"
+            android:text="Continue with Google"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/facebook_textv"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/signinwithfacebook"
+            android:drawableStart="@drawable/facebookicon"
+            android:drawablePadding="38dp"
+            android:gravity="center"
+            android:paddingStart="35.91dp"
+            android:layout_marginHorizontal="25dp"
+            android:paddingEnd="81.64dp"
+            android:text="Continue with Facebook"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/loginlogo"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="12dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".explorefragment">
+
+
+    <LinearLayout
+        android:id="@+id/liner_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Find Products"
+            android:layout_marginTop="35dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/search_bg"
+            android:drawableStart="@drawable/search_icon"
+            android:drawablePadding="15dp"
+            android:hint="Search Store"
+            android:padding="12dp"
+            android:textColorHint="#7C7C7C" />
+
+    </LinearLayout>
+
+    <GridLayout
+        android:id="@+id/grid_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:layout_below="@id/liner_id"
+        android:layout_centerHorizontal="true"
+        android:rowCount="2">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview_jewe_id"
+            android:layout_width="160dp"
+            android:layout_height="190dp"
+            android:layout_margin="5dp"
+            android:backgroundTint="#eef7f1"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="75dp"
+                    android:layout_marginTop="25dp"
+                    android:src="@drawable/jewe"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="jewelery"
+                    android:textSize="18dp"
+                    android:layout_marginTop="25dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview_ele_id"
+            android:layout_width="160dp"
+            android:layout_height="190dp"
+            android:layout_margin="5dp"
+            android:backgroundTint="#edf7fc"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="75dp"
+                    android:layout_marginTop="25dp"
+                    android:src="@drawable/elec"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="electronics"
+                    android:textSize="18dp"
+                    android:layout_marginTop="25dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview_men_id"
+            android:layout_width="160dp"
+            android:layout_height="190dp"
+            android:layout_margin="5dp"
+            android:backgroundTint="#fff8e5"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="75dp"
+                    android:layout_marginTop="25dp"
+                    android:src="@drawable/cloth"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="men's clothing"
+                    android:textSize="18dp"
+                    android:layout_marginTop="25dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview_women_id"
+            android:layout_width="160dp"
+            android:layout_height="190dp"
+            android:layout_margin="5dp"
+            android:backgroundTint="#fde8e4"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="75dp"
+                    android:layout_marginTop="25dp"
+                    android:src="@drawable/womancloth"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="women's clothing"
+                    android:textSize="18dp"
+                    android:layout_marginTop="25dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </GridLayout>
+
+</RelativeLayout>
